@@ -1,9 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function Page1() {
+const Page1 = () => {
   return (
-    <div>
-      <hr />I AM PAGE 1
-    </div>
+    <Wrapper>
+      <hr />I AM PAGE 1 WITH STYLED COMPONENT
+    </Wrapper>
   );
-}
+};
+
+export default Page1;
+
+const Wrapper = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+`;

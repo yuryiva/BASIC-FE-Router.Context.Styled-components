@@ -1,9 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function Page2() {
+const Page2 = () => {
   return (
     <div>
-      <hr /> I AM PAGE 2
+      <Wrapper>
+        <hr /> I AM PAGE 2 WITH STYLED COMPONENT
+      </Wrapper>
     </div>
   );
-}
+};
+
+export default Page2;
+
+const Wrapper = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+`;
